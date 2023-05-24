@@ -1,0 +1,103 @@
+Pig Latin Converter List
+
+```
+import java.util.ArrayList;
+public class PigLatinConverterList
+{
+   private String myLine;
+
+   public PigLatinConverterList(String str)
+   { 
+      myLine = str; 
+		  pigLatin(); 
+   }
+   
+   /**
+   *Precondition: ch may be an upper or lower-case alphabetic character
+   *Parameter - ch a single-character string
+   *Return - true if ch is a vowel, false otherwise
+   */
+   public boolean isVowel(String ch)
+   { 
+     /* should have been implemented in part (a) of original PigLatinConverter Lab; copy it over */
+     String vowel = "aeiouAEIOU"; 
+     boolean check = (vowel.indexOf(ch.charAt(0)) != -1) ? true : false; 
+     return check; 
+   }
+
+   /**
+   *Precondition: word is not null and may begin with a vowel 
+   *              or consonant. You may use isVowel from part a.
+   *Parameter ñ word, the word to be converted to Pig Latin
+   *Return - the Pig Latin form of word
+   */
+   public String toPig(String word)
+   { 
+      /* should have been implemented in part (b) of original PigLatinConverter Lab; copy it over */
+		  String pigWord; 
+     String ch = ""+word.charAt(0); 
+     
+     if (!isVowel(ch))
+     {
+      pigWord = word.substring(1) + word.charAt(0) + "ay";
+      return pigWord; 
+     }
+     else // is vowel
+     {
+       pigWord = word + "yay";
+       return pigWord; 
+     }
+   }
+   
+   /**	Private helper method
+	* Precondition:	myLine contains at least one word.
+	*			Words are separated by exactly one space.
+	*			There is no punctuation in myLine.
+	* Postcondition:	myLine is unchanged.
+   * @return a list of words in myLine
+   */
+   private ArrayList<String> getLineWords()
+   { 
+      /* to be implemented in part (a) */
+    ArrayList<String> lst = new ArrayList<String>(); 
+    myLine += " "; 
+		int space = myLine.indexOf(" "); 
+
+		while (space != -1)
+		{
+			lst.add(myLine.substring(0, space));
+			myLine = myLine.substring(space + 1); 
+			space = myLine.indexOf(" "); 
+		}
+		return lst;
+   }
+
+   /**
+   * Mutator method
+	* Precondition:	myLine contains at least one word.
+	*			Words are separated by exactly one space.
+	*			There is no punctuation in myLine.
+	* Postcondition:	myLine has been converted to Pig Latin.
+	*			The Pig Latin words are separated by one space.
+   */
+   public void pigLatin()
+   { 
+      /* to be implemented in part (b) */     
+			String s = getLineWords().toString(); 
+		 	s = s.substring(1, s.length()-1);
+		  String[] arr = s.split(", "); 
+
+		  String pigLine = ""; 
+		 	for (String k : arr)
+			{
+				pigLine += toPig(k) + " ";  
+			}
+		 myLine = pigLine; 
+   }
+   
+   public String toString()
+   { 
+     return myLine;
+   }
+}
+```

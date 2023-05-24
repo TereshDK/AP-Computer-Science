@@ -1,0 +1,78 @@
+Pig Latin Converter
+
+```
+public class PigLatinConverter
+{
+/**
+*Precondition: ch may be an upper or lower-case alphabetic character
+*Parameter - ch a single-character string
+*Return - true if ch is a vowel, false otherwise
+*/
+   public boolean isVowel(String ch)
+   { 
+     /* to be implemented in part (a) */
+     String vowel = "aeiouAEIOU"; 
+     boolean check = (vowel.indexOf(ch.charAt(0)) != -1) ? true : false; 
+     return check; 
+   }
+
+/**
+*Precondition: word is not null and may begin with a vowel 
+*              or consonant. You must use isVowel from part a.
+*Parameter word, the word to be converted to Pig Latin
+*Return - the Pig Latin form of word
+*/
+ public String toPig(String word)
+ { 
+      /* to be implemented in part (b) */ 
+     String pigWord; 
+     String ch = ""+word.charAt(0); 
+     
+     if (!isVowel(ch))
+     {
+      pigWord = word.substring(1) + word.charAt(0) + "ay";
+      return pigWord; 
+     }
+     else // is vowel
+     {
+       pigWord = word + "yay";
+       return pigWord; 
+     }
+ }
+
+/**
+	* Precondition:	myLine contains at least one word.
+	*			Words are separated by exactly one space.
+	*			There is no punctuation in myLine.
+	*			You must use toPig from part b.
+  * Postcondition: myLine has been converted to Pig Latin.
+  * 		Words are separated by one space.
+  * Return – a string that contains the converted words 
+*/
+   public String convertLine(String myLine)
+   {
+   /* to be implemented in part (c) */
+    String pigLine = "";
+    int space = myLine.indexOf(" ");
+
+      while (space != -1)
+      {
+        pigLine += toPig(myLine.substring(0, space)) + " ";
+        myLine = myLine.substring(space + 1);
+        space = myLine.indexOf(" ");
+      }
+      
+    pigLine += toPig(myLine);
+    return pigLine;
+   
+       // other method
+   /* for (String f : arr)
+      {
+        pigLine += toPig(f) + " ";  
+      }
+
+      pigLine += "\b";
+      return pigLine; */
+   }
+}
+```

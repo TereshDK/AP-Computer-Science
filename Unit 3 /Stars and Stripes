@@ -1,0 +1,82 @@
+Stars and Stripes
+
+```
+public class StarsAndStripes //leave class name the same
+{
+   private String name; //global variable
+   
+   public StarsAndStripes(String one) //constructor method
+   {
+      // init global variable to value stored in local variable one
+      name = one; 
+      System.out.println("Lab3.1 - StarsAndStripes");
+      printTwoBlankLines();
+      
+    
+	   System.out.println("Written by "+ name);
+      printTwoBlankLines();
+   }
+
+
+   public void printTwentyStars()
+   {
+   	  // your code here
+   	  System.out.println("********************");
+   }
+
+   public void printTwentyDashes()
+   {
+   	  // your code here
+   	  System.out.println("--------------------");
+   }
+
+   public void printTwoBlankLines()
+   {
+   	  // your code here
+      System.out.println();
+      System.out.println();
+   }
+   
+   public void printASmallBox()
+   {		
+  	  //your code here
+      //the small box should have 4 lines of dashes
+      //and 3 lines of stars 
+      //See sample output
+      printTwentyDashes(); 
+      printTwentyStars();
+      printTwentyDashes(); 
+      printTwentyStars();
+      printTwentyDashes();
+      printTwentyStars();
+      printTwentyDashes(); 
+   }
+ 
+   public void printABigBox()
+   { 	
+   	  // your code here
+      //the big box should callprintASmallBox() to make a big box
+      //see sample output
+      printASmallBox();
+      printASmallBox();
+   }   
+}
+```
+
+Stars and Stripes Runner
+
+```
+public class Main {
+  // we will do this part together in class!
+  public static void main(String args[]) {
+    // Instantiate a StarsAndStripes object.
+    StarsAndStripes object = new StarsAndStripes("Ashton Naicker");
+
+    // Call the methods needed to make the patterns on the word document
+    object.printTwoBlankLines();
+    object.printASmallBox();
+    object.printTwoBlankLines();
+    object.printABigBox();
+  }
+}
+```

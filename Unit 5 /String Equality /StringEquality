@@ -1,0 +1,35 @@
+String Equality
+
+```
+public class StringEquality
+{
+	String wordOne, wordTwo;
+
+	public StringEquality(String one, String two)
+	{
+		wordOne = one;
+		wordTwo = two;
+	}
+   
+	public String checkEqual( )
+	{
+		//YOUR CODE HERE (must use equals)
+    if (wordOne.equals(wordTwo))
+    {
+      return wordOne + " is the same as " + wordTwo;  
+    }
+    return wordOne + " is not the same as " + wordTwo; 
+	}
+   
+   public String checkCompare( )
+	{
+		//YOUR CODE HERE (must use compereTo)
+    // 0 = equal, 0> = less char val, 0< = greator char val  
+    if (wordOne.compareTo(wordTwo) == 0)
+    {
+      return wordOne + " has the same letters as " + wordTwo; 
+    }
+    return wordOne + " does not have the same letters as " + wordTwo; 
+  }
+}
+```

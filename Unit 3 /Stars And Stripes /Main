@@ -1,0 +1,19 @@
+Main
+
+```
+public class Main 
+{
+  // we will do this part together in class!
+  public static void main(String args[]) 
+  {
+    // Instantiate a StarsAndStripes object.
+    StarsAndStripes object = new StarsAndStripes("First Last");
+
+    // Call the methods needed to make the patterns on the word document
+    object.printTwoBlankLines();
+    object.printASmallBox();
+    object.printTwoBlankLines();
+    object.printABigBox();
+  }
+}
+```

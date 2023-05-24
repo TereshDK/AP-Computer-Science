@@ -1,0 +1,47 @@
+Prime Factors
+
+```
+public class PrimeFactors
+{
+    private String factors;
+    private int n;
+    
+    //complete the constructor method
+    public PrimeFactors(int a)
+    {
+      factors = "";
+      n = a;
+    }
+    
+    //if the string is prime return an empty string
+    //if the sting is not prime return "NOT"
+    //set the global variable equal to all the factors
+    public String isPrime()
+    {
+      int count = 0; 
+
+      for (int j = 1; j <= n; j++)
+      {
+        if (n % j == 0)
+        {
+          factors += j + " ";
+          count++;
+        }
+      }
+
+      if (count > 2)
+      {
+        return "NOT"; 
+      }
+      else
+      {
+        return "\b"; 
+      }
+    }     
+    
+    public String toString( )
+    {
+      return "The factors are " + factors;
+    } 
+}    
+```

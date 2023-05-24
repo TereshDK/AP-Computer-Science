@@ -1,0 +1,23 @@
+Digit Averager
+
+```
+public class digitAverager
+{
+   public double sumDigits( int n )
+	{
+		//write the implementation of the sumDigits method
+    double average = 0; 
+    int count = 0;
+    
+      while(n != 0)
+      {
+       average += n % 10;
+       n = n / 10;
+       count++;
+      }
+
+    average /= count; 
+    return average;
+  }
+}
+```

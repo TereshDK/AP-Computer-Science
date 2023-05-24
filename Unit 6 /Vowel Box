@@ -4,36 +4,35 @@ Vowel Box
 public class Main
 {
    public static void makeBox( String s)
-	{
+   {
     //your code here
     String vowels = "AEIOUaeiou";
     for (int j = 0; j < vowels.length(); j++)
-      {
+    {
       for (int i = 0; i < s.length(); i++)
+      {
+        if (s.charAt(i) == vowels.charAt(j))
         {
-          if (s.charAt(i) == vowels.charAt(j))
-          {
-            System.out.println(s); 
-          }
-          else
-          {
-           continue; 
-          }
+          System.out.println(s); 
+        }
+        else
+        {
+          continue; 
         }
       }
-	}
+   }
+}
 
    public static void main ( String[] args )
-	 {
+   {
       //why can we call makeBox without using an object?
       // [static void method]
     
-		  makeBox("hippo");
+      makeBox("hippo");
       makeBox("abcd");
       makeBox("Mississippi");
       makeBox("x");
       makeBox("chicken");
-      
-	}
+   }
 }
 ```

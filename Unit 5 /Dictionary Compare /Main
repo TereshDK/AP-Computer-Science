@@ -1,0 +1,41 @@
+Main 
+
+```
+public class Main
+{
+   public static void main( String args[] )
+   {
+    //all test cases are done for you
+		WordsCompare test = new WordsCompare("abe","ape");
+		System.out.println("\n" + test + "\n");
+
+		test.setWords("giraffe","gorilla");
+		test.compare();
+		System.out.println(test + "\n");
+
+		test.setWords("one","two");
+		test.compare();
+		System.out.println(test + "\n");
+
+		test.setWords("fun","funny");
+		test.compare();
+		System.out.println(test + "\n");
+
+	  test.setWords("123","19");
+		test.compare();
+		System.out.println(test + "\n");
+
+		test.setWords("193","1910");
+		test.compare();
+		System.out.println(test + "\n");
+
+		test.setWords("goofy","godfather");
+		test.compare();
+		System.out.println(test + "\n");
+
+		test.setWords("funnel","fun");
+		test.compare();
+		System.out.println(test + "\n");
+	}
+}
+```

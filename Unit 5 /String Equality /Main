@@ -1,0 +1,20 @@
+Main
+
+```
+public class Main
+{
+	public static void main( String args[] )
+	{
+		//make a StringEquality object (make sure you look at the constructor method and pass in the appropriate variable(s))
+    StringEquality eq = new StringEquality("ABC", "CBA"); 
+
+    //use the object you just made to call the checkEqual method (make sure you print the method call in order to get an output)
+    System.out.println("\n"); 
+    System.out.println(eq.checkEqual()); 
+
+    //use the object you just made to call the checkCompare method (make sure you print the method call in order to get an output)
+    System.out.println(eq.checkCompare()); 
+
+	}
+} 
+```

@@ -1,0 +1,51 @@
+Words Compare
+
+```
+public class WordsCompare
+{
+	private String wordOne, wordTwo;
+  private int compare;
+  //add code to each of the following methods
+	public WordsCompare()
+	{
+    wordOne = "";
+    wordTwo = "";
+    compare = 0;  
+	}
+
+	public WordsCompare(String one, String two)
+	{
+    setWords(one, two); 
+    compare = wordOne.compareTo(wordTwo); 
+	}
+
+	public void setWords(String one, String two)
+	{
+    wordOne = one; 
+    wordTwo = two; 
+	}
+  
+  public String toString()
+	{
+    if (compare == 1)
+    {
+      return wordOne + " should be placed after " + wordTwo; 
+    }
+    return wordOne + " should be placed before " + wordTwo;
+  }
+
+	public void compare()
+	{
+    compare = wordOne.compareTo(wordTwo); 
+    
+    if (compare > 0)
+    {
+      compare = 1;  
+    }
+    else
+    {
+      compare = -1; 
+    }
+	}
+}
+```

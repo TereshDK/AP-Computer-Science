@@ -1,0 +1,34 @@
+Main
+
+```
+public class Main
+{
+    public static void main ( String[] args )
+    {
+      BoxTriangle bob = new BoxTriangle();
+        
+      bob.printBox("hippo");
+			System.out.println("\n");
+			
+      bob.printTriangle("hippo");
+			System.out.println("\n");
+        
+      bob.printBox("hi");
+			System.out.println("\n");
+			
+      bob.printTriangle("hi");
+			System.out.println("\n");
+        
+      bob.printBox("a");
+			System.out.println("\n");
+			
+      bob.printTriangle("a");
+			System.out.println("\n");
+        
+      bob.printBox("chicken");
+			System.out.println("\n");
+			
+      bob.printTriangle("chicken");    
+    } 
+} 
+```

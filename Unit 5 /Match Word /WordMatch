@@ -1,0 +1,71 @@
+Word Match
+
+```
+public class WordMatch
+{
+   private String secret;
+
+   public WordMatch(String word)
+   {
+      secret = word;
+   }
+
+   /** Returns a score for guess, as described in part a.
+   * Precondition: 0 < guess.length() <= secret.length()
+   */
+   public int scoreGuess(String guess)
+   { 
+    /* to be implemented in part a */ 
+    int len = guess.length(); 
+    int score = 0; 
+    int index = 0; 
+    
+    for (;;)
+    {
+      index = secret.indexOf(guess, index); 
+      if (index != -1)
+      {
+        score++; 
+        index += len;
+      }
+      else
+      {
+        break; 
+      }
+    }
+    int value = (int)(score * Math.pow(len, 2)); 
+    return value; 
+   }
+
+
+   /** Returns the better of two guesses, as determined by scoreGuess and the rules for a
+   *	tie-breaker that are described in part b.
+   *	Precondition: guess1 and guess2 contain all lowercase letters.
+   *	guess1 is not the same as guess2.
+   */
+   public String ﬁndBetterGuess(String guess1, String guess2)
+   { 
+      /* to be implemented in part b */ 
+     if (scoreGuess(guess1) > scoreGuess(guess2))
+    {
+      return guess1; 
+    }
+    else if (scoreGuess(guess2) > scoreGuess(guess1))
+    {
+      return guess2; 
+    }
+    else
+    {
+     int compare = guess1.compareTo(guess2); 
+      if (compare > 0)
+      {
+        return guess1;
+      }
+      else
+      {
+        return guess2; 
+      }
+    }
+   }
+}
+```

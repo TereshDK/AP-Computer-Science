@@ -5,7 +5,6 @@ public class Main
 {
 	public static void main( String args[] )
 	{
-		//add test cases 
     digitAverager n = new digitAverager(); 
     
     System.out.println(n.sumDigits(234)); 

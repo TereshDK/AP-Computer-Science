@@ -5,7 +5,6 @@ public class Main
 {
    public static void makeBox( String s)
    {
-    //your code here
     String vowels = "AEIOUaeiou";
     for (int j = 0; j < vowels.length(); j++)
     {
@@ -25,9 +24,6 @@ public class Main
 
    public static void main ( String[] args )
    {
-      //why can we call makeBox without using an object?
-      // [static void method]
-    
       makeBox("hippo");
       makeBox("abcd");
       makeBox("Mississippi");

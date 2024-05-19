@@ -5,6 +5,7 @@ public class Triangle
 {
    public void createTriangle(int num, String letter)
 	{
+    // top triangles
   	for (int i = 1; i <= n; i++)
   	{
     	for (int j = 1; j <= i; j++)

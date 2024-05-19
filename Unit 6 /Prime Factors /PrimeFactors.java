@@ -6,16 +6,12 @@ public class PrimeFactors
     private String factors;
     private int n;
     
-    //complete the constructor method
     public PrimeFactors(int a)
     {
       factors = "";
       n = a;
     }
     
-    //if the string is prime return an empty string
-    //if the sting is not prime return "NOT"
-    //set the global variable equal to all the factors
     public String isPrime()
     {
       int count = 0; 

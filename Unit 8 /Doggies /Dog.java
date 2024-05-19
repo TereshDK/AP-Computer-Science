@@ -1,8 +1,6 @@
 Dog
 
 ```
-//This class is complete
-//DO NOT MAKE ANY CHANGES
 public class Dog 
 {
     private int age;

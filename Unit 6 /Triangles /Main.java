@@ -5,8 +5,6 @@ public class Main
 {
 	public static void main( String args[] )
    {
-     //make an object and call the createTriangle method with each of the appropriate parameters
-     //look at previous labs and expected outputs in instructions for guidance 
      Triangle n = new Triangle(); 
      n.createTriangle(3, "A");
 

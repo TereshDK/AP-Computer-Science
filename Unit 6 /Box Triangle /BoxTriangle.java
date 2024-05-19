@@ -6,8 +6,6 @@ public class BoxTriangle
        
     public void printBox( String word )
     {
-       // print out the box word
-       // use a for loop
       for (int i = 0; i < word.length(); i++)
         {
           System.out.println(word); 
@@ -17,8 +15,6 @@ public class BoxTriangle
        
     public void printTriangle( String word )
     {
-       // print out the triangle word
-       // use a for loop
        String get = "";
        for (int j = 0; j < word.length(); j++)
          { 

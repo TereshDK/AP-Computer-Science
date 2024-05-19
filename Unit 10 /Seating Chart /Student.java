@@ -1,15 +1,14 @@
 Student
 
 ```
-//THIS CLASS IS DONE FOR YOU
 public class Student 
 {
 	private String name;
 	private int absenceCount;
 	
-    public Student( String nm, int ac ) 
+    public Student( String name, int ac ) 
     {
-    	name = nm;
+    	this.name = name;
     	absenceCount = ac;
     }  
     	
@@ -25,7 +24,7 @@ public class Student
     
     public String toString()
     {
-    	return String.format("%-9s",(name + " " + absenceCount));
+    	return String.format("%-9s", (name + " " + absenceCount));
     }
 }
 ```

@@ -25,7 +25,7 @@ class Main
     int y1 = key.nextInt(); 
     int y2 = key.nextInt();
     
-    int m = (y2 - y1)/(x2 - x1); 
+    int m = (y2 - y1) / (x2 - x1); 
     System.out.println("The slope of the line is: " + (double)m);
 
     // Part-2: permieter of a rectangle
@@ -33,7 +33,7 @@ class Main
     int width = 1 + rand.nextInt(10); // [0, 9] -> [1, 10]
     int length = 5 + rand.nextInt(16); // [0, 15] -> [5, 20]
     
-    System.out.println("\nThe random numbers generated are: " + "[width] "+width + " and " + "[length] "+length);
+    System.out.println("\nThe random numbers generated are: " + "[width] " + width + " and " + "[length] " + length);
     System.out.println("The perimeter of the rectangle is: " + ((width*2) + (length*2)));  
     
     // Part-3: area of a trapezoid
@@ -43,17 +43,17 @@ class Main
     int base02 = key.nextInt();
     int height = key.nextInt(); 
     
-    double area = (double)(((base01 + base02)*height)/2);
+    double area = (double)(((base01 + base02) * height) / 2);
     System.out.println("The area of the trapezoid is: " + area);
     
-    // Part-4: volume of a cone
+    // Part-4: vol of a cone
     System.out.print("\nEnter the radius and height: "); 
 
     int radius = key.nextInt(); 
     height = key.nextInt();
     
-    double volume = (double)((Math.PI * (Math.pow(radius, 2)) * height)/3); 
-    System.out.println("The volume of the cone is: " + volume);
+    double vol = (double)((Math.PI * (Math.pow(radius, 2)) * height) / 3); 
+    System.out.println("The vol of the cone is: " + vol);
     
     // Part-5: surface area of a cube
     System.out.print("\nEnter the height: "); 
@@ -71,7 +71,6 @@ class Main
     
     double hypotenuse = (double)(Math.sqrt(((Math.pow(sideA, 2)) + (Math.pow(sideB, 2))))); 
     System.out.println("The hypotenuse of the triangle is: " + hypotenuse);  
-
   }
 }
 ```

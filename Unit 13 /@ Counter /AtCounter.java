@@ -7,9 +7,6 @@ public class AtCounter
 
 	public AtCounter(int rows, int cols)
 	{
-		//size the matrix
-    //use nested loops to randomly load the matrix
-    //you will need to use Math.random()
 
     atMat = new String[rows][cols];
 		int rand = 0; 
@@ -30,9 +27,6 @@ public class AtCounter
 
 	public int countAts(int r, int c)
 	{
-		//add in recursive code to count up the # of @s connected
-		//start checking at spot [r,c]
-		
 		int cnt = 0; 
 		
 		if ((r > -1) && (r < atMat.length) && (c > -1) && (c < atMat[0].length) && (atMat[r][c].equals("@")))
@@ -43,12 +37,7 @@ public class AtCounter
 		
 		return cnt;   
   }
-    
-	/*
-	 *this method will return all values in the matrix
-	 *this method should return a view of the matrix
-	 *that looks like a matrix with out brackets or commas 
-	 */
+
 	public String toString()
 	{
 		String gridOut = ""; 

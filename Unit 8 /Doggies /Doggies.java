@@ -9,14 +9,11 @@ public class Doggies
 
 	public Doggies(int size)
 	{
-		//point pups at a new arry of Dog objects of the approriate size
 		pups = new Dog[size]; 
 	}
 	
 	public void set(int spot, int age, String name)
-	{
-		//put a new Dog in the array at spot 
-		//make sure spot is in bounds		
+	{	
 		Dog obj = new Dog(age, name); 
 		if (spot < pups.length)
 		{
@@ -26,7 +23,6 @@ public class Doggies
 
 	public String getNameOfOldest()
 	{
-		//return the name of the oldest dog
    	String name = "";
 		for (int k = 1; k < pups.length; k++)
 		{
@@ -44,7 +40,6 @@ public class Doggies
  
   public String getNameOfYoungest()
 	{
-		//return the name of the youngest dog
 		String name = ""; 
 		for (int k = 1; k < pups.length; k++)
 		{

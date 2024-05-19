@@ -3,11 +3,8 @@ Triangle
 ```
 public class Triangle
 {
-	 //no more methods are neede; you don't need modifier nor constructor methods
    public void createTriangle(int num, String letter)
 	{
-   	// add code here to create your triangles
-   	// top triangle
   	for (int i = 1; i <= n; i++)
   	{
     	for (int j = 1; j <= i; j++)

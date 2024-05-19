@@ -1,7 +1,6 @@
 Main 
 
 ```
-//this whole class is done for you
 public class Main
 {
 	public static void main ( String[] args )

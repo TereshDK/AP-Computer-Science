@@ -1,48 +1,38 @@
 Stars and Stripes
 
 ```
-public class StarsAndStripes //leave class name the same
+public class StarsAndStripes
 {
-   private String name; //global variable
+   private String name;
    
-   public StarsAndStripes(String one) //constructor method
+   public StarsAndStripes(String one) 
    {
-      // init global variable to value stored in local variable one
       name = one; 
       System.out.println("Lab3.1 - StarsAndStripes");
       printTwoBlankLines();
       
-    
-	   System.out.println("Written by "+ name);
+	  System.out.println("Written by "+ name);
       printTwoBlankLines();
    }
 
-
    public void printTwentyStars()
    {
-   	  // your code here
    	  System.out.println("********************");
    }
 
    public void printTwentyDashes()
    {
-   	  // your code here
    	  System.out.println("--------------------");
    }
 
    public void printTwoBlankLines()
    {
-   	  // your code here
       System.out.println();
       System.out.println();
    }
    
    public void printASmallBox()
    {		
-  	  //your code here
-      //the small box should have 4 lines of dashes
-      //and 3 lines of stars 
-      //See sample output
       printTwentyDashes(); 
       printTwentyStars();
       printTwentyDashes(); 
@@ -54,9 +44,6 @@ public class StarsAndStripes //leave class name the same
  
    public void printABigBox()
    { 	
-   	  // your code here
-      //the big box should callprintASmallBox() to make a big box
-      //see sample output
       printASmallBox();
       printASmallBox();
    }   

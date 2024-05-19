@@ -1,20 +1,15 @@
 String Ripper 
 
 ```
-public class Main {
-  /*
-   * method getFirstChunk() should return
-   * all letters up to the first @ sign
-   * Make sure you check the return type
-   */
-
-  public static String getFirstChunk(String a) {
+public class Main 
+{
+  public static String getFirstChunk(String a) 
+  {
     return a.substring(0, a.indexOf('@'));
   }
 
-  // Do not change anything below this line
-  public static void main(String args[]) {
-    // method calls
+  public static void main(String args[]) 
+  {
     System.out.println(getFirstChunk("elephants@are@big"));
     System.out.println(getFirstChunk("computer@science"));
     System.out.println(getFirstChunk("dogs@are@smarter@than@cats"));

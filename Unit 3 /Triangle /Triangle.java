@@ -3,11 +3,9 @@ Triangle
 ```
 public class Triangle
 {
-  // global variable delcaration
 	private int sideA, sideB, sideC;
 	private double perimeter;
 
-  // constructor
 	public Triangle(int a, int b, int c)
 	{
     sideA = a; 

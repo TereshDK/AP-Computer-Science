@@ -11,21 +11,19 @@ public class Main
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("How many Dogs are in the pack? :: ");
-		int size = keyboard.nextInt(); //size will store what the user enters
-		Doggies pack = new Doggies(size);//makes new Doggies object; calls Doggies constructor method
+		int size = keyboard.nextInt();
+		Doggies pack = new Doggies(size);
       
   	String name = "";
     int age = 0;
 		
 		for(int i=0; i<size;i++)
 		{
-      System.out.print("Enter the age :: ");
+          System.out.print("Enter the age :: ");
 		  age = keyboard.nextInt(); 
 			System.out.print("Enter the name :: ");
 		  name = keyboard.next();
 			
-    	//call the method to add a new dog to the pack 
-      //Hint: look at the Doggie class
 			pack.set(i, age, name); 
 		}		
 		System.out.println("pack :: "+pack);

@@ -3,9 +3,8 @@ Digit Averager
 ```
 public class digitAverager
 {
-   public double sumDigits( int n )
+   public double totalDigits( int n )
 	{
-		//write the implementation of the sumDigits method
     double average = 0; 
     int count = 0;
     

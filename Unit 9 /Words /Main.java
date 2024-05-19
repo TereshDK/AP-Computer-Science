@@ -23,8 +23,6 @@ public class Main
 		System.out.println("\nafter removing words with 3 chars \n" + test);
 		System.out.println("\nnumber of vowels in the words removed == " + vowelsRemoved);
 		System.out.println("\n\n");
-
-		//add the remaining test cases from the instructions document
 	
 		test = new Words("fun fly four six times ten plus eight");
 		System.out.println(test);

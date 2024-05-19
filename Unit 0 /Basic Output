@@ -5,7 +5,7 @@ class Main
 {
   public static void main(String[] args) 
   {    
-	/* Basic Output Lab Title */    
+    /* Basic Output Lab Title */    
 
 	System.out.println("\n\t****************************\n" + 
 	"\t\t* Basic Outputs Lab *\n" + 
